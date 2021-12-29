@@ -136,20 +136,20 @@ main{
     width: 40px;
     border-radius: 50%;
 }
-#m1{
+.m1{
     font-size: small;
     font-weight: 700;
     color: var(--White);
     margin-left: 20px;
 }
-#m2{
+.m2{
     font-size: small;
     font-weight: 400;
     line-height: 1.8em;
     color: var(--Soft-Pink);
 
 }
-#m3{
+.m3{
     font-size: 12px;
     font-weight: 500;
     line-height: 1.8em;
