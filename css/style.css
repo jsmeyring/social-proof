@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+/*Primary*/
+--Very-Dark-Magenta: hsl(300, 43%, 22%);/*body card*/
+--Soft-Pink: hsl(333, 80%, 67%);/*h2 body card*/
+/*Neutral*/
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);/*main paragraph*/
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);/*body background*/
+--White: hsl(0, 0%, 100%);/*card paragraph and body stars-status*/
+/*fonts*/
+--standard-font: 'Spartan', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: var(--standard-font);
+    background-image: url(..images/bg-pattern-top-desktop.svg), url(..images/bg-pattern-bottom-desktop.svg);
+    background-position: bottom 50vh right 52vw,top 50vh left 50vw;
+    background-repeat:  no-repeat, no-repeat;
+    font-family: var(--standard-font);
+    font-size: 15px;
+}
+main{
+    max-width: 1100px;
+    background-color: var(--White);
+    padding: 22px;
+    display: grid;
+    grid-template-areas: 
+    "hc rt rt"
+    "mc mc mc";
+}
+.header_card{
+    grid-area: hc;
+}
+.header_card h1{
+    font-family: var(--standard-font);
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 10px;
+    color: var(--Very-Dark-Magenta);
+}
+.header_card p{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.8em;
+    margin-bottom: 60px;
+}
+.rating{
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    grid-area: rt;
+    margin-left: 100px;
+    margin-right: -80px;
+}
+
+.icon-star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+.icon-star img{
+    padding: 5px;
+}
+.rate01{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    min-height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 160px;
+}
+.rate01 p{
+    color: var(--Very-Dark-Magenta);
+    font-size: small;
+    font-weight: 700;
+    margin-right: 80px;
+}
+.rate02{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    min-height: 52px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 80px;
+}
+.rate02 p{
+    color: var(--Very-Dark-Magenta);
+    font-size: small;
+    font-weight: 700;
+    margin-right: 60px;
+}
+.rate03{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    min-height: 52px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rate03 p{
+    color: var(--Very-Dark-Magenta);
+    font-size: small;
+    font-weight: 700;
+    margin-right: 80px;
+}
+
+/*===============================*/
+
+.main_card{
+    max-width: 1090px;
+    display: grid;
+    grid-template-areas: "cd01 cd02 cd03";
+    grid-template-columns: 3 1fr;
+    column-gap: 30px;
+    grid-area: mc;
+}
+.main_card img{
+    width: 40px;
+    border-radius: 50%;
+}
+#m1{
+    font-size: small;
+    font-weight: 700;
+    color: var(--White);
+    margin-left: 20px;
+}
+#m2{
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: var(--Soft-Pink);
+
+}
+#m3{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.8em;
+    margin-top: 25px;
+
+}
+.card_01{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px;
+    color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    grid-area: cd01;
+    margin-bottom: 25px;
+}
+.colton{
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    margin-top: 10px;
+}
+.card_02{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px;
+    color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    grid-area: cd02;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.irene{
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    margin-top: 10px;
+    
+}
+.card_03{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 30px;
+    color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    grid-area: cd03;
+    margin-top: 30px;
+}
+.anne{
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    margin-top: 10px;
+}
+@media (max-width: 680px){
+    body{
+        height: 100%;
+    }
+    main{
+        max-width: 550px;
+        padding: 30px;
+        display: grid;
+        grid-template-areas: 
+        "hc"
+        "st"
+        "mc";    
+    }
+    .header_card{
+    
+        grid-area: hc;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    }
+    .rating{
+        grid-area: st;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+   
+    .rate01{
+        min-width: 300px;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: var(--Light-Grayish-Magenta);
+        border-radius: 10px;
+        margin: 0;
+    
+    }
+    .rate01 p{
+        margin-right: 0;
+    }
+    .rate02{
+        min-width: 300px;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--Light-Grayish-Magenta);
+        margin: 0;
+    }
+    .rate02 p{
+        margin-right: 0;
+    }
+    .rate03{
+        min-width: 300px;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--Light-Grayish-Magenta);
+        margin: 0;
+    }
+    .rate03 p{
+        margin-right: 0;
+    }
+    .main_card{
+        max-width: 540px;
+        display: grid;
+        grid-template-areas: 
+        "cd01"
+        "cd02"
+        "cd03";
+        grid-template-columns: 3 1fr;
+        column-gap: 30px;
+    }   
+}
