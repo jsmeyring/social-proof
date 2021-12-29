@@ -1,6 +1,8 @@
 ## Welcome! 👋
 
-# Frontend Mentor - Stats preview card
+# Frontend Mentor challange 
+
+# Social proof section
 
 ![desktop-design](https://user-images.githubusercontent.com/91090905/147690251-93004f3d-5004-4bc5-9883-6f82348ef13e.jpg)
 
